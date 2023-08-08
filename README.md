@@ -32,27 +32,3 @@ PersonDTO findById(long id);
 void save(PersonDTO person);
 
 }
-
-Annotations
-
-Name | Description
---- | ---
-@Named | Provide a name to identify this object, once created.  Used in autowiring/dependency injection.
-@ManagedBean | Makes this bean available for JSF to use
-@Scope	| How long should this bean remain in memory?
-
-"session" : the object should remain in memory for the entire time the user is logged in to the web session.
-
-"request" : generate a new object with each http (web page) request.
-
-
-Important Files
-
-Filename | 	Purpose
---- | ---
-web.xml | 	Configuration for a Java-based web application.
-pom.xml | 	Configuration for Maven.  Build dependencies go here.
-faces-config.xml | 	JSF configuration file.  Navigation rules go here.
-applicationContext.xml | 	Spring configuration files.  Java bean definitions and component-scan go here.
-*.css	 | Stylesheet to provide consistent styling (font, etc.) across a website.
-*.xhtml	 | Where we put HTML markup and JSF tags to create the UI of our application.
